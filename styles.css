@@ -5,6 +5,10 @@
   box-sizing: border-box;
 }
 
+html {
+  background: #0a0a1a;
+}
+
 body {
   font-family: 'Inter', sans-serif;
   background: linear-gradient(160deg, #0f0a2e, #0a0a1a, #0a1525);
@@ -13,7 +17,12 @@ body {
   justify-content: center;
   align-items: flex-start;
   min-height: 100vh;
+  min-height: 100dvh;
   padding: 24px 16px;
+  padding-top: max(24px, env(safe-area-inset-top));
+  padding-bottom: max(24px, env(safe-area-inset-bottom));
+  padding-left: max(16px, env(safe-area-inset-left));
+  padding-right: max(16px, env(safe-area-inset-right));
 }
 
 .container {
