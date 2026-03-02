@@ -3,42 +3,120 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="Logan Kulinski — Software engineer, gamer, and horror lover. Creator of cta4j and CTA Smoker Tracker. Connect on GitHub, LinkedIn, and Twitter.">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="profile">
+  <meta property="og:title" content="Logan Kulinski">
+  <meta property="og:description" content="Software engineer and Java enthusiast. Creator of cta4j, a Chicago Transit Authority train and bus tracker.">
+  <meta property="og:url" content="https://lbku.net">
+  <meta property="og:image" content="https://lbku.net/img/me.JPG">
+  <meta property="og:image:alt" content="Logan Kulinski">
+  <meta property="profile:first_name" content="Logan">
+  <meta property="profile:last_name" content="Kulinski">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@lbkulinski">
+  <meta name="twitter:creator" content="@lbkulinski">
+  <meta name="twitter:title" content="Logan Kulinski">
+  <meta name="twitter:description" content="Software engineer and Java enthusiast. Creator of cta4j.">
+  <meta name="twitter:image" content="https://lbku.net/img/me.JPG">
+
+  <link rel="canonical" href="https://lbku.net">
+
   <title>Logan Kulinski</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="styles.css">
   <script src="https://kit.fontawesome.com/eb648d6e5d.js" crossorigin="anonymous"></script>
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Logan Kulinski",
+    "url": "https://lbku.net",
+    "image": "https://lbku.net/img/me.JPG",
+    "email": "lbkulinski@gmail.com",
+    "sameAs": [
+      "https://github.com/lbkulinski",
+      "https://linkedin.com/in/lbkulinski",
+      "https://bsky.app/profile/lbku.net",
+      "https://twitter.com/lbkulinski"
+    ],
+    "knowsAbout": ["Java", "Software Engineering", "Transit Technology"],
+    "description": "Software engineer and Java enthusiast. Creator of cta4j, a Chicago Transit Authority train and bus tracker."
+  }
+  </script>
 </head>
 <body>
 <div class="container">
   <div class="profile">
     <img src="img/me.JPG" alt="Logan Kulinski" class="profile-pic">
-    <h1>Logan Kulinski</h1>
-    <p>🏳️‍🌈 Java, League of Legends, Coffee</p>
+    <h1>Logan Kulinski 🏳️‍🌈</h1>
+    <p class="bio"><span id="coder">Coder</span> <span id="coffee">☕️</span> · <span id="horror-buff">Horror Buff</span> <span id="pumpkin">🎃</span> · <span id="gamer">Gamer</span> <span id="joystick">🕹️</span></p>
   </div>
-  <div class="links">
-    <a href="https://github.com/lbkulinski" target="_blank" class="link">
-      <i class="fab fa-github"></i>
-    </a>
-    <a href="https://linkedin.com/in/lbkulinski" target="_blank" class="link">
-      <i class="fab fa-linkedin"></i>
-    </a>
-    <a href="https://bsky.app/profile/lbku.net" target="_blank" class="link">
-      <i class="fa-brands fa-bluesky"></i>
-    </a>
-    <a href="https://twitter.com/lbkulinski" target="_blank" class="link">
-      <i class="fab fa-twitter"></i>
-    </a>
-    <a href="mailto:lbkulinski@gmail.com" class="link">
-      <i class="fas fa-envelope"></i>
-    </a>
-    <a href="https://cta4j.app" target="_blank" class="link" title="This is my custom CTA train/bus tracker!">
-      <i class="fa-solid fa-train"></i>
-    </a>
-    <a href="https://open.spotify.com/episode/6KriWqGChMZdVPm49EaS9U" target="_blank" class="link"
-       title="I was on a podcast to talk about Java!">
-      <i class="fas fa-podcast"></i>
-    </a>
+  <div class="sections">
+    <section class="link-section">
+      <h2 class="section-label">Social</h2>
+      <div class="links links--grid">
+        <a href="https://github.com/lbkulinski" target="_blank" rel="noopener me" class="link" aria-label="GitHub">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="https://linkedin.com/in/lbkulinski" target="_blank" rel="noopener me" class="link" aria-label="LinkedIn">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="https://twitter.com/lbkulinski" target="_blank" rel="noopener me" class="link" aria-label="Twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="https://letterboxd.com/lbku/" target="_blank" rel="noopener me" class="link" aria-label="Letterboxd">
+          <img src="img/letterboxd.png" alt="Letterboxd" class="icon-img">
+        </a>
+        <a href="mailto:lbkulinski@gmail.com" class="link" aria-label="Email">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </div>
+    </section>
+
+    <section class="link-section">
+      <h2 class="section-label">Projects</h2>
+      <div class="links">
+        <a href="https://cta4j.app" target="_blank" rel="noopener" class="link">
+          <i class="fa-solid fa-train" aria-hidden="true"></i>
+          <span>CTA Train &amp; Bus Tracker</span>
+        </a>
+        <a href="https://ctasmokers.com" target="_blank" rel="noopener" class="link">
+          <i class="fa-solid fa-smoking" aria-hidden="true"></i>
+          <span>CTA Smoker Tracker</span>
+        </a>
+        <a href="https://github.com/lbkulinski/cta4j-java-sdk" target="_blank" rel="noopener" class="link">
+          <i class="fa-solid fa-code" aria-hidden="true"></i>
+          <span>CTA Java SDK</span>
+        </a>
+      </div>
+    </section>
+
+    <section class="link-section">
+      <h2 class="section-label">Appearances</h2>
+      <div class="links">
+        <a href="https://open.spotify.com/episode/6KriWqGChMZdVPm49EaS9U" target="_blank" rel="noopener" class="link">
+          <i class="fa-brands fa-spotify" aria-hidden="true"></i>
+          <span>Guest on Inside Java Podcast</span>
+        </a>
+      </div>
+    </section>
   </div>
 </div>
+
+<!-- 🔪 -->
+<!-- // TODO: fix life -->
+<!-- "Welcome to the League of Draaaaven!" - Draven, probably -->
+
+<script src="js/easter-eggs.js"></script>
 </body>
 </html>
