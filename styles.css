@@ -7,7 +7,6 @@
 
 html {
   background: linear-gradient(160deg, #0f0a2e, #0a0a1a, #0a1525);
-  background-attachment: fixed;
   min-height: 100%;
 }
 
