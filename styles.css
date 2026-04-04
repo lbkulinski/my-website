@@ -176,6 +176,7 @@ h1 {
 .links a[href*="mailto"] i            { color: #ea4335; }
 .links a[href*="cta4j.app"] i         { color: #e4281c; }
 .links a[href*="ctasmokers.com"] i    { color: #c8a96e; }
+.links a[href*="streetsblog.org"] i   { color: #f5a623; }
 
 /* Java cursor easter egg */
 .java-cursor,
